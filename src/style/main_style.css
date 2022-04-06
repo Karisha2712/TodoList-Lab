@@ -1,0 +1,111 @@
+.card-date {
+  font-size: 12px;
+  color: #777777;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.buttons {
+  margin-top: 16px;
+}
+
+.block {
+  width: 50vw;
+}
+
+.title {
+  font-size: 64px;
+}
+
+.btn-success {
+  width: 8rem;
+  height: 2.6rem;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.btn-outline-success {
+  width: 8rem;
+  height: 2.6rem;
+  border: 1px solid;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  background: none;
+  margin-left: 16px;
+  text-align: center;
+  padding-left: 39px;
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+  border-radius: .5px;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+
+.status {
+  font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 2px;
+  width: 10%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.status:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.Done {
+  background: #DBEDDB;
+}
+
+.Processing {
+  background: #FDECC8;
+}
+
+.Expired {
+  background: #FFE2DD;
+}
+
+.card-text {
+  margin-bottom: 8px;
+}
+
+.file-block {
+  margin-bottom: 8px;
+}
+
+.file-link {
+  color: black;
+}
+
+.file-link:hover {
+  color: #777777;
+}
+
+.delete-btn {
+  margin-left: 8px;
+}
+
+.delete-button {
+  color: black;
+  margin-left: 4px;
+}
+
+.delete-button:hover {
+  color: #777777;
+}
+
+.btn-link {
+  text-decoration: underline;
+  border: none;
+  background: none;
+  padding: 0;
+}
