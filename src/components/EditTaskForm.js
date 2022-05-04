@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import Context from '../context'
+import Context from '../context';
+import formatDate from "../api/Api";
+
 
 function EditTaskForm({ mode, onEdit }) {
+
     let task = mode.task;
     const { setMode } = React.useContext(Context);
     let fileName = task.file_name || "Load file";
     const [file, setFile] = useState({ name: fileName });
     const [title, setTitle] = useState(task.title);
     const [text, setText] = useState(task.text);
-    let dt = new Date(task.date);
-    let date1 = dt.getFullYear()
-        + '-' + String(dt.getMonth() + 1).padStart(2, '0')
-        + '-' + String(dt.getDate()).padStart(2, '0');
-    const [date, setDate] = useState(date1);
+    const [date, setDate] = useState(formatDate(task.date));
 
     function submitHandler(event) {
         event.preventDefault();
@@ -53,5 +52,6 @@ function EditTaskForm({ mode, onEdit }) {
 
     );
 }
+
 
 export default EditTaskForm;
